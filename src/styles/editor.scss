@@ -1,0 +1,71 @@
+@import "config.scss";
+
+#editor {
+  border: 1px solid $orchid;
+  border-radius: 2rem;
+  padding: 1rem 4rem 2rem 4rem;
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  #inputs {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .canvasBox {
+      height: 5rem;
+      width: 5rem;
+      font-size: 2rem;
+      text-align: center;
+      background-color: $plum;
+      color: $white;
+      border: 1px solid $grey;
+      border-radius: 1rem;
+      margin: 0 1rem 0.5rem 1rem;
+      padding-left: 1rem;
+
+      &:focus {
+        outline: none;
+        border-color: $orchid;
+        box-shadow: 0 0 1rem $grey;
+      }
+    }
+  }
+
+  .button {
+    font-size: 1rem;
+    background-color: $pink;
+    color: $white;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 2rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: transparent;
+      border-color: $orchid;
+    }
+  }
+  .swatches-picker {
+    margin-bottom: 2.5rem;
+  }
+}
